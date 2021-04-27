@@ -1,0 +1,209 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Chonburi&family=K2D:wght@800&family=Mitr:wght@500&family=Sriracha&display=swap');
+    body{
+    background: #80ddfe;
+        margin: 0;
+        min-width: none;
+    }
+    .container{
+        position: absolute;
+        left: 50%;
+        top: -80px;
+        transform: translateX(-50%);
+    }
+    .title{
+        font-family: 'Fredoka One', cursive;
+        fill:#3a82f3;
+        position: absolute;
+        text-shadow: 10px 5px #AFEBFB;
+        font-size: 15px;
+    }
+    .title2{
+        /* color: white; */
+        font-size: 5px;
+        /* font-family: 'Kanit', sans-serif; */
+        font-family: 'Mitr', sans-serif;
+        position: absolute;
+        fill: #005c83;
+    }
+    .draw{
+        background-color: #ffe1b1;
+        background-image: url(https://i.imgur.com/SdQnElC.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .sand{
+        background-color: #ffe1b1;
+        /* background-image: url(https://i.imgur.com/WjdRCLu.png);  */
+        background-size: contain; 
+        background-repeat: no-repeat;
+    }
+    .sea1{
+        background-color: #107ead;
+        /* background-image: url(https://i.imgur.com/WjdRCLu.png);  */
+        background-size: contain; 
+        background-repeat: no-repeat;
+    }
+    .sea2{
+        background-color: #1d6483;
+        /* background-image: url(https://i.imgur.com/WjdRCLu.png);  */
+        background-size: contain; 
+        background-repeat: no-repeat;
+    }
+    .sea3{
+        background-color: #59a5e4;
+        /* background-image: url(https://i.imgur.com/WjdRCLu.png);  */
+        background-size: contain; 
+        background-repeat: no-repeat;
+    }
+    .sea4{
+        background-color: #7edefb;
+        /* background-image: url(https://i.imgur.com/WjdRCLu.png);  */
+        background-size: contain; 
+        background-repeat: no-repeat;
+    }
+    .sand2{
+        background-color: #ffe1b1;
+        /* background-image: url(https://i.imgur.com/WjdRCLu.png);  */
+        background-size: contain; 
+        background-repeat: no-repeat;
+    }
+    .show{
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(168, 108, 103);
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+    /* The Close Button */
+    .close {
+        position: absolute;
+         top: 15px;
+             right: 35px;
+                 color: #f1f1f1;
+                 font-size: 40px;
+                 font-weight: bold;
+                  transition: 0.3s;
+       }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    #place:hover, #more:hover, #laklai:hover, #chain:hover, #eco:hover{
+        opacity: 95%;
+        cursor: pointer;
+    }
+    #buttonlink{
+        cursor: pointer;
+    }
+</style>
+
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            let lastKnownScrollPosition = 0;
+            console.log(lastKnownScrollPosition);
+            document.addEventListener('scroll', function(e) {
+                lastKnownScrollPosition = window.scrollY;
+                console.log(lastKnownScrollPosition);
+            });
+            
+        };
+    </script>
+    <svg viewBox="0 0 100 75" class="draw">
+        <filter id="blurMe">
+            <feGaussianBlur stdDeviation="1.5"/>
+          </filter>
+        <path fill="#fff3" filter="url(#blurMe)">
+            <animate attributeName="d"
+                values="
+                M60,0
+                0,50
+                45,50
+                69,0;
+                M60,0
+                -20,50
+                25,50
+                69,0;
+                M60,0
+                75,50
+                120,50
+                69,0;
+                M60,0
+                0,50
+                45,50
+                69,0;"
+                dur="8s" repeatCount="indefinite"  />
+        </path>
+        <!-- <text x="18.6" y="25" class="title2">แผนการปกป้องมหาสมุทรโลก</text> -->
+    </svg>
+    <svg viewBox="0 0 186 180" class="sand">
+        <!-- <circle cx="42" cy="50" r="35" fill="white" stroke="none" id="pramong"></circle>
+        <circle cx="147" cy="135" r="35" fill="white" stroke="none" id="koodmine"></circle> -->
+    </svg>
+    <svg viewBox="0 0 186 170" class="sea1">
+        <circle cx="42" cy="75" r="35" fill="white" stroke="none" id="pramong" ></circle>
+    </svg>
+    <svg viewBox="0 0 186 165" class="sea2">
+        <circle cx="147" cy="85" r="35" fill="white" stroke="none" id="koodmine" ></circle> 
+    </svg>
+    <svg viewBox="0 0 186 190" class="sea3">
+        <path d="M32,45
+                h118
+                l-118,110
+                h118" fill="none" stroke-width="1.5" stroke="white"></path>
+        <circle cx="32" cy="45" r="20" fill="white" stroke="none" id="place"></circle>
+        <circle cx="150" cy="45" r="20" fill="white" stroke="none" id="more"></circle>
+        <circle cx="93" cy="100" r="20" fill="white" stroke="none" id="laklai"></circle>
+        <circle cx="32" cy="155" r="20" fill="white" stroke="none" id="chain"></circle>
+        <circle cx="150" cy="155" r="20" fill="white" stroke="none" id="eco"></circle>
+    </svg>
+    <svg viewBox="0 0 186 120" class="sand2">
+        <circle cx="150" cy="40" r="20" fill="white" stroke="none" ></circle>
+        <circle cx="92.5" cy="40" r="20" fill="white" stroke="none" ></circle>
+        <circle cx="35" cy="40" r="20" fill="white" stroke="none" ></circle>
+    </svg>
+    <svg viewBox="0 0 186 100" class="sea4">
+        <rect x="20" y="25" rx="5" ry="5" width="55" height="55"
+        fill="#4c99f7" stroke-width="0" />
+        <a href="https://www.greenpeace.org/thailand/act/global-ocean-sanctuaries//"><rect x="34.5" y="62.5" rx="3" ry="3" width="27" height="7.5"
+        fill="#ffe1b1" stroke-width="0" id="buttonlink"></rect></a>
+    </svg>
+    <div class="show">
+        <span class="close">&times;</span>
+    </div>
+    <script>
+        const show = document.querySelector(".show")
+        document.getElementById("place").addEventListener("click", showweb);
+        document.getElementById("more").addEventListener("click", showweb);
+        document.getElementById("laklai").addEventListener("click", showweb);
+        document.getElementById("chain").addEventListener("click", showweb);
+        document.getElementById("eco").addEventListener("click", showweb);
+
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+            show.style.display = "none";
+        }
+
+        function showweb() {
+            show.style.display = "block";
+        }
+    </script>
+</body>
+</html>
