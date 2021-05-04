@@ -126,8 +126,20 @@
      background-color: transparent;
     text-decoration: none;
 }
-
-
+    .show1,.show2,.show3,.show4,.show5{
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(168, 108, 103);
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+    .data1,.data2,.data3,.data4,.data5{
+        display: none;
+    }
+    
 </style>
 
 </head>
@@ -258,25 +270,86 @@
             </rect>
         ลงชื่อสนับสนุนที่นี่</a>
     </svg>
-    <div class="show">
+    
+    <div class="show1">
         <span class="close">&times;</span>
+        <div class="data1">test1</div>
+    </div>
+    <div class="show2">
+        <span class="close">&times;</span>
+        <div class="data2">test2</div>
+    </div>
+    <div class="show3">
+        <span class="close">&times;</span>
+        <div class="data3">test3</div>
+    </div>
+    <div class="show4">
+        <span class="close">&times;</span>
+        <div class="data4">test4</div>
+    </div>
+    <div class="show5">
+        <span class="close">&times;</span>
+        <div class="data5">test5</div>
     </div>
     
     <script>
-        const show = document.querySelector(".show")
-        document.getElementById("place").addEventListener("click", showweb);
-        document.getElementById("more").addEventListener("click", showweb);
-        document.getElementById("laklai").addEventListener("click", showweb);
-        document.getElementById("chain").addEventListener("click", showweb);
-        document.getElementById("eco").addEventListener("click", showweb);
+        const show1 = document.querySelector(".show1");
+        const show2 = document.querySelector(".show2");
+        const show3 = document.querySelector(".show3");
+        const show4 = document.querySelector(".show4");
+        const show5 = document.querySelector(".show5");
+        
+        const data1 = document.querySelector(".data1");
+        const data2 = document.querySelector(".data2");
+        const data3 = document.querySelector(".data3");
+        const data4 = document.querySelector(".data4");
+        const data5 = document.querySelector(".data5");
+        
+        document.getElementById("place").onclick = function(){
+            show1.style.display = "block";
+            data1.style.display = "block";
+        };
+        document.getElementById("more").onclick = function(){
+            show2.style.display = "block";
+            data2.style.display = "block";
+        };
+        document.getElementById("laklai").onclick = function(){
+            show3.style.display = "block";
+            data3.style.display = "block";
+        };
+        document.getElementById("chain").onclick = function(){
+            show4.style.display = "block";
+            data4.style.display = "block";
+        };
+        document.getElementById("eco").onclick = function(){
+            show5.style.display = "block";
+            data5.style.display = "block";
+        };
 
         var span = document.getElementsByClassName("close")[0];
         span.onclick = function() { 
-            show.style.display = "none";
+            show1.style.display = "none";
+            data1.style.display = "none";
         }
-
-        function showweb() {
-            show.style.display = "block";
+        var span = document.getElementsByClassName("close")[1];
+        span.onclick = function() { 
+            show2.style.display = "none";
+            data2.style.display = "none";
+        }
+        var span = document.getElementsByClassName("close")[2];
+        span.onclick = function() { 
+            show3.style.display = "none";
+            data3.style.display = "none";
+        }
+        var span = document.getElementsByClassName("close")[3];
+        span.onclick = function() { 
+            show4.style.display = "none";
+            data4.style.display = "none";
+        }
+        var span = document.getElementsByClassName("close")[4];
+        span.onclick = function() { 
+            show5.style.display = "none";
+            data5.style.display = "none";
         }
     </script>
 </body>
