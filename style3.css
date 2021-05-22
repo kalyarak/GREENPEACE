@@ -4,12 +4,17 @@
     padding: 0;
     margin: 0;
 }
+body{
+    /* background-color: #ffe1b1; */
+    /* min-height: 1500px; */
+    background-color: #060534;
+}
 #first{
     position: relative;
     width: 100%;
-    height: 110vw;
+    height: 58vw;
     overflow: hidden;
-    background-color: #074bb0;
+    background-image: linear-gradient(#074bb0 75%,#060534 75%);
 }
 #cover{
     width: 100%;
@@ -19,8 +24,25 @@
 #sec{
     position: relative;
     width: 100%;
-    height: 77.5vw;
-    background-color: #ffe1b1;
+    height: 130vw;
+    background-color: #060534;
+}
+#what{
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    top:5%;
+    background-image: url(https://imgur.com/l1nZ6te.png);
+    background-size: cover;
+    background-position: center;
+}
+#why{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    background-image: url(https://imgur.com/uzs7kPG.png);
+    background-size: cover;
 }
 .cover-img{
     position: absolute;
@@ -29,32 +51,25 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
-.container{
-    padding-top: 5%;
-}
 .title2{
     font-size: 2vw;
     font-family: 'Mitr', sans-serif;
-    /* position: absolute; */
-    color: #005c83;
-    /* top: -15%;
-    left: 14%; */
+    position: absolute;
+    color: #060534;
+    top: 5%;
+    left: 14%;
     line-height: 205%
 }
-.year{
-    position: absolute;
-    top: 13%;
-    right: 16%;
-}
-.text-1{
-    margin-top: 20%;
+.title2.arai{
+    font-size: 1.5vw;
+    top: 44.5%;
+    left: 29.5%;
 }
 .samsib{
-    font-size: 11.25vw;
-    font-family: 'Concert One', cursive;
-    color:#83daff;
+    font-size: 5vw; 
+    font-family: 'Concert One', cursive; 
+    color:#fff;
 }
-
 .title2.text2{
     top: 47.5%;
     left: 43%;
@@ -62,38 +77,54 @@
     font-size: 1.7vw;
 }
 #third{
-    background-color: #107ead;
+    /* background-color: #113c67; */
     width: 100%;
     height: 170vw;
     position: relative;
     overflow-x: hidden;
+    background-size: 150% 100%;
 }
 .pic{
-    width: 35%;
-    height: 20%;
-    background-color: rgb(255, 255, 255);
+    width: 37%;
+    height: 22%;
+    /* background-color: rgb(255, 255, 255); */
     border-radius: 100%;
     top: 27%;
     left: -4%;
     position: absolute;
     transform: scale(1.02);
+    background-image: url(https://imgur.com/uGdUgWZ.png);
+    background-size: cover;
 }
 .part2{
     width: 100%;
     height: 45%;
     position: absolute;
     bottom: 0;
-    background-color: #1d6483;
+    background-image: url(https://imgur.com/xgUabdZ.png);
+    background-size: cover;
+    /* background-image: url(https://media.discordapp.net/attachments/787691312186916874/845543487621038090/image0.png?width=1191&height=670);
+    background-position: right; */
+
+}
+.part{
+    width: 100%;
+    height: 55%;
+    position: absolute;
+    background-image: url(https://imgur.com/rO5IWuq.png);
+    background-size: cover;
 }
 .pic2{
-    width: 35%;
-    height: 45%;
-    background-color: rgb(255, 255, 255);
+    width: 40%;
+    height: 50%;
+    /* background-color: rgb(255, 255, 255); */
     border-radius: 100%;
     top: 35%;
-    right: -5%;
+    right: -7%;
     position: absolute;
     transform: scale(1.02);
+    background-image: url(https://imgur.com/H1Idpsk.png);
+    background-size: cover;
 }
 .pramong, .koodmine{
     font-family: 'Mitr', sans-serif;
@@ -129,7 +160,7 @@
 .head.get{
     left: 9.5%;
     font-size: 5.25vw;
-    font-family: 'Mitr';
+    font-family: 'Mitr'; 
     color:#ffffff;
     position: absolute;
     top: 20%;
@@ -138,7 +169,7 @@
 .head.start{
     left: 16%;
     font-size: 5.25vw;
-    font-family: 'Mitr';
+    font-family: 'Mitr'; 
     color:#005c83;
     position: absolute;
     top: 20%;
@@ -218,7 +249,7 @@ i{
     overflow: hidden;
     width: 100%;
     height: 100%;
-    background-color: rgb(5, 15, 34,0.95);
+    background-color: rgb(5, 15, 34,0.95); 
     position: fixed;
     left: 0;
     top: 0;
@@ -295,7 +326,7 @@ i{
     transform: translate(-50%, -50%);
     user-select: none;
   }
-
+  
   .items .item {
     position: absolute;
     top: 50%;
@@ -323,19 +354,19 @@ i{
     box-shadow: 0px 0px 3vw #00000032;
     cursor: pointer;
   }
-
+  
   .item.prev {
     z-index: 2;
     opacity: 0.25;
     transform: translate(-125%, -50%);
   }
-
+  
   .item.next {
     z-index: 2;
     opacity: 0.25;
     transform: translate(25%, -50%);
   }
-
+  
   .items .button-container {
     position: absolute;
     top: 50%;
@@ -344,7 +375,7 @@ i{
     width: auto;
     z-index: 100;
   }
-
+  
   .button-container .button {
     color: #fff;
     /* font-size: 32px; */
@@ -353,11 +384,11 @@ i{
     opacity: 0.75;
     transition: all 300ms ease-in-out;
   }
-
+  
   .button-container .button:hover {
     opacity: 1;
   }
-
+  
   .button-container .button:before {
     content: "";
     position: absolute;
@@ -370,11 +401,11 @@ i{
     border-radius: 50%;
     z-index: -99;
   }
-
+  
   .button-container .button:nth-child(1) {
     float: left;
   }
-
+  
   .button-container .button:nth-child(2) {
     float: right;
   }
@@ -389,13 +420,13 @@ i{
     animation: spin 2s linear infinite;
     position: absolute;
   }
-
+  
   /* Safari */
   @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
   }
-
+  
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -423,16 +454,16 @@ i{
         left: -5%;
       }
       to {
-        left: 4%;
+        left: 2%;
       }
   }
 
   @keyframes mynewmove2 {
     from {
-        right: -5%;
+        right: -7%;
       }
       to {
-        right: 3%;
+        right: 0%;
       }
   }
 .pictale:hover{
@@ -450,6 +481,9 @@ i{
 #pra2{
     animation: kayab2 4s infinite linear;
 }
+#soh{
+    animation: kayab3 5s infinite linear;
+}
 
 @keyframes kayab{
     50%{transform: translateY(1.75vw);}
@@ -458,4 +492,7 @@ i{
 
 @keyframes kayab2{
     40%{transform: translateY(-2vw);}
+}
+@keyframes kayab3{
+    40%{transform: translateX(-1.5vw) translateY(-1.5vw);}
 }
