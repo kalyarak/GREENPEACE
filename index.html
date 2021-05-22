@@ -1,500 +1,315 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>you colour me blue 💙</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Chonburi&family=K2D:wght@800&family=Mitr:wght@500&family=Sriracha&display=swap');
-    body{
-    background: #80ddfe;
-        margin: 0;
-        min-width: none;
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-    }
-    .container{
-        position: absolute;
-        left: 50%;
-        top: -80px;
-        transform: translateX(-50%);
-    }
-    .title{
-        font-family: 'Fredoka One', cursive;
-        fill:#3a82f3;
-        position: absolute;
-        text-shadow: 10px 5px #AFEBFB;
-        font-size: 15px;
-    }
-    .title2{
-        /* color: white; */
-        font-size: 5px;
-        /* font-family: 'Kanit', sans-serif; */
-        font-family: 'Mitr', sans-serif;
-        position: absolute;
-        fill: #005c83;
-    }
-    .title3{
-        /* color: white; */
-        font-size: 5px;
-        /* font-family: 'Kanit', sans-serif; */
-        font-family: 'Mitr', sans-serif;
-        position: absolute;
-        fill: #ffffff;
-    }
-    .draw{
-        background-color: #ffe1b1;
-        background-image: url(https://i.imgur.com/SdQnElC.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .sand{
-        background-color: #ffe1b1;
-        /* background-image: url(https://i.imgur.com/WjdRCLu.png);  */
-        background-size: contain; 
-        background-repeat: no-repeat;
-    }
-    .sea1{
-        background-color: #107ead;
-        /* background-image: url(https://i.imgur.com/WjdRCLu.png);  */
-        background-size: contain; 
-        background-repeat: no-repeat;
-    }
-    .sea2{
-        background-color: #1d6483;
-        /* background-image: url(https://i.imgur.com/WjdRCLu.png);  */
-        background-size: contain; 
-        background-repeat: no-repeat;
-    }
-    .sea3{
-        background-color: #59a5e4;
-        /* background-image: url(https://i.imgur.com/WjdRCLu.png);  */
-        background-size: contain; 
-        background-repeat: no-repeat;
-    }
-    .sea4{
-        background-color: #7edefb;
-        /* background-image: url(https://i.imgur.com/WjdRCLu.png);  */
-        background-size: contain; 
-        background-repeat: no-repeat;
-    }
-    .sand2{
-        background-color: #ffe1b1;
-        /* background-image: url(https://i.imgur.com/WjdRCLu.png);  */
-        background-size: contain; 
-        background-repeat: no-repeat;
-    }
-    .show{
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(168, 108, 103);
-        position: fixed;
-        left: 0;
-        top: 0;
-        display: none;
-    }
-    /* The Close Button */
-    .close {
-        position: absolute;
-         top: 15px;
-             right: 35px;
-                 color: #faf0f0;
-                 font-size: 40px;
-                 font-weight: bold;
-                  transition: 0.3s;
-       }
-
-    p{
-        font-family: 'Mitr', sans-serif;
-        font-size: 30px;
-        color: #3a82f3;
-        top: 2em;
-    }
-    p1{
-        font-family: 'Mitr', sans-serif;
-        font-size: 50px;
-        color: #1f5cbe;
-        margin: 2em;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        cursor: pointer;
-    }
-    #place:hover, #more:hover, #laklai:hover, #chain:hover, #eco:hover{
-        opacity: 95%;
-        cursor: pointer;
-    }
-    #buttonlink{
-        cursor: pointer;
-    }
-    a:link {
-    color: green;
-     background-color: transparent;
-    text-decoration: none;
-}
-    .show1,.show2,.show3,.show4,.show5{
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(5, 15, 34,0.95); 
-        position: fixed;
-        left: 0;
-        top: 0;
-        display: none;
-    }
-    .data1,.data2,.data3,.data4,.data5{
-        display: none;
-        /* margin: 5em; */
-    }
-
-    img{
-        height: 100%;
-        margin: 0;
-        /* text-align: right; */
-    }
-    
-</style>
-
-</head>
+    <head>
+        <title>30x30</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style3.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    </head>
 <body>
-    <script>
-        window.onload = function() {
-            let lastKnownScrollPosition = 0;
-            console.log(lastKnownScrollPosition);
-            document.addEventListener('scroll', function(e) {
-                lastKnownScrollPosition = window.scrollY;
-                console.log(lastKnownScrollPosition);
-            });
-            
-        };
-    </script>
-    <svg viewBox="0 0 100 75" class="draw">
-        <g transform="translate(0,50)">
-            <text x="23.5" y="15.5" style="font-size: 15px; font-family: 'Concert One', cursive; fill:#d3b789;">30 x 30</text>
-        <text x="35.5" y="23.5" style="font-size: 8px; font-family: 'Mitr', cursive; fill:#d3b789;">คืออะไร?</text>
-        <text x="23" y="15" style="font-size: 15px; font-family: 'Concert One', cursive; fill:#0f688f;">30 x 30</text>
-        <text x="35" y="23" style="font-size: 8px; font-family: 'Mitr', cursive; fill:#0f688f;">คืออะไร?</text>
-    </g>
-        <filter id="blurMe">
-            <feGaussianBlur stdDeviation="1.5"/>
-          </filter>
-        <path fill="#fff3" filter="url(#blurMe)">
-            <animate attributeName="d"
-                values="
-                M60,0
-                0,50
-                45,50
-                69,0;
-                M60,0
-                -20,50
-                25,50
-                69,0;
-                M60,0
-                75,50
-                120,50
-                69,0;
-                M60,0
-                0,50
-                45,50
-                69,0;"
-                dur="8s" repeatCount="indefinite"  />
-        </path>
-       
-    </svg>
-    <svg viewBox="0 0 200 200" class="sand">
-        
-        <g transform="scale(0.85) translate(20,-15)">
-
-        <text x="8" y="55" style="font-size: 26px; font-family: 'Concert One', cursive; fill:#83daff;">30</text>
-        <text x="9" y="55" style="font-size: 26px; font-family: 'Concert One', cursive; fill:#005c83;">30</text>
-        <text x="35" y="55" class="title2">การกำหนดพื้นที่สำหรับเขตคุ้มครองระบบนิเวศทางทะเลร้อยละ 30 ของมหาสมุทร</text>
-        <text x="13" y="65" class="title2">โดยมีหัวใจหลักในการอนุรักษ์ ปกป้อง และฟื้นฟูความหลากหลายทางชีวภาพของมหาสมุทร</text>
-        <text x="13" y="80" class="title2">ภายในระยะเวลา 10 ปี ระหว่างปี 2021 - </text>
-        <text x="100" y="86" style="font-size: 26px; font-family: 'Concert One', cursive; fill:#005c83;">2030 </text>
-        <text x="126" y="86" style="font-size: 26px; font-family: 'Concert One', cursive; fill:#83daff;">30 </text>
-
-        <g transform="scale(0.85) translate(75,100)">
-            <text x="35" y="55" class="title2">ในปัจจุบัน มหาสมุทรของโลกเราประสบวิกฤตสภาพภูมิอากาศ </text>
-            <text x="15" y="65" class="title2">สภาวะความเป็นกรดของมหาสมุทร การทำประมงเกินขนาด และการขุด</text>
-            <text x="15" y="75" class="title2">เหมืองใต้ทะเล ซึ่งวิกฤตเหล่านี้ส่งผลให้ระบบนิเวศทางทะเลสูญเสีย</text>
-            <text x="18" y="95" class="title2">เราจึงต้องผลักดันแผน 30x30 เพื่อฟื้นฟูระบบนิเวศทางทะเลให้กลับ</text>
-            <text x="18" y="105" class="title2">มาอุดมสมบูรณ์ ซึ่งวิกฤตต่าง ๆ ที่เราพูดถึงเกิดจาก...</text>
-            <!-- <circle cx="42" cy="50" r="35" fill="white" stroke="none" id="pramong"></circle>
-            <circle cx="147" cy="135" r="35" fill="white" stroke="none" id="koodmine"></circle> -->
-            </g>
-        <!-- <circle cx="42" cy="50" r="35" fill="white" stroke="none" id="pramong"></circle>
-        <circle cx="147" cy="135" r="35" fill="white" stroke="none" id="koodmine"></circle> -->
-        </g>
-    </svg>
-    <svg viewBox="0 0 200 200" class="sea1">
-        <text x="15.5" y="23.8" style="font-size: 15px; font-family: 'Mitr', cursive; fill:#12668d;">ทำไมต้องมีแผน</text>
-        <text x="115.5" y="23.8" style="font-size: 15px; font-family: 'Concert One', cursive; fill:#12668d;">30 x 30 ?</text>
-        <text x="15" y="23" style="font-size: 15px; font-family: 'Mitr', cursive; fill:#ffffff;">ทำไมต้องมีแผน</text>
-        <text x="115" y="23" style="font-size: 15px; font-family: 'Concert One', cursive; fill:#ffffff;">30 x 30 ?</text>
-        
-        <circle cx="42" cy="75" r="35" fill="white" stroke="none" id="pramong" ></circle>
-        <g transform="scale(0.82) translate(75,50)">
-            <text x="35" y="45" class="title3" style="font-size: 15px;"> การประมงเกินขนาด</text>
-            <text x="35" y="55" class="title3">การทำประมงที่เกินขนาดจะส่งผลให้สัตว์น้ำในทะเลมีจำนวน</text>
-            <text x="15" y="65" class="title3">ลดลงเรื่อย ๆ รวมถึงอุปกรณ์ต่าง ๆ ที่ใช้ในการทำประมงอย่างเศษอวน</text>
-            <text x="15" y="75" class="title3">ยังทำให้สัตว์ทะเลเสียชีวิตมากมาย อีกทั้งยังส่งผลกระทบต่อแนวปะการัง</text>
-            <text x="15" y="85" class="title3">ดอกไม้ทะเล และสัตว์หน้าดินอีกด้วย</text>
-        
-        </g>
-    </svg>
-    <svg viewBox="0 0 186 165" class="sea2">
-        <circle cx="147" cy="85" r="35" fill="white" stroke="none" id="koodmine" ></circle> 
-        <g transform="scale(0.68) translate(0,50)">
-            <text x="15" y="45" class="title3" style="font-size: 15px;"> การขุดเหมืองใต้ทะเล
-            </text>
-            <text x="15" y="55" class="title3">การขุดเหมืองแร่ใต้ทะเลมีเป้าหมายเพื่อการสกัดแร่หายากต่างๆ</text>
-            <text x="5" y="65" class="title3">อีกทั้งมีการส่งเครื่องจักรขนาดใหญ่ลงไปใต้ทะเล ซึ่งเครื่องจักรขนาดใหญ่นี้</text>
-            <text x="5" y="75" class="title3">จะลงไปทำลายแหล่งที่อยู่อาศัยของสิ่งมีชีวิต และยังเป็นตัวทำลายระบบ</text>
-            <text x="5" y="85" class="title3">กักเก็บคาร์บอนใต้ท้องทะเล ส่งผลกระทบอย่างรุนแรงต่อความหลากหลาย</text>
-            <text x="5" y="95" class="title3">ทางชีวภาพของสัตว์ และ สิ่งแวดล้อมรวมทั้งการเปลี่ยนแปลงของสภาพอากาศ </text>
-        </g>
-    </svg>
-    <svg viewBox="0 0 186 190" class="sea3">
-        <text x="15.5" y="18.8" style="font-size: 10px; font-family: 'Mitr', cursive; fill:#12668d;">ผลที่ได้รับจากการทำแผน</text>
-        <text x="125.5" y="18.8" style="font-size: 10px; font-family: 'Concert One', cursive; fill:#12668d;">30 x 30 ?</text>
-        <text x="15" y="18" style="font-size: 10px; font-family: 'Mitr', cursive; fill:#ffffff;">ผลที่ได้รับจากการทำแผน</text>
-        <text x="125" y="18" style="font-size: 10px; font-family: 'Concert One', cursive; fill:#ffffff;">30 x 30 ?</text>
-        <path d="M32,45
-                h118
-                l-118,110
-                h118" fill="none" stroke-width="1.5" stroke="white"></path>
-        <image href="https://i.imgur.com/uUBDyhH.png" x="10" y="20" width="60" id="place" />
-        <image href="https://i.imgur.com/p4NSGyQ.png" x="120" y="20" width="60" id="more" />
-        <image href="https://i.imgur.com/LwS03PE.png" x="65" y="80" width="60" id="laklai" />
-        <image href="https://i.imgur.com/PK2OTNB.png" x="15" y="130" width="60" id="chain" />
-        <image href="https://i.imgur.com/qeQMysx.png" x="120" y="130" width="60" id="eco" />
-        
-    </svg>
-    <svg viewBox="0 0 186 120" class="sand2">
-        <text x="40" y="25.3" class="title2" style="font-size: 8px; fill:#50bada">พื้นที่ที่เริ่มทำโครงการ 
-        </text>
-        <text x="115" y="25.3" class="title2" style="font-size: 8px; font-family: 'Concert One', cursive; fill:#50bada">30 x 30
-        </text>
-        <text x="40" y="25" class="title2" style="font-size: 8px;">พื้นที่ที่เริ่มทำโครงการ 
-        </text>
-        <text x="115" y="25" class="title2" style="font-size: 8px; font-family: 'Concert One', cursive;">30 x 30
-        </text>
-        
-        <g transform="translate(0,25)">
-              <image href="https://imgur.com/CpLxeEo.png" x="5" y="5" width="60" />
-              <image href="https://imgur.com/AaTtdla.png" x="65" y="5" width="60" />
-              <image href="https://imgur.com/5sdP6J0.png" x="125" y="5" width="60" />
-        <circle cx="150" cy="40" r="20" fill="url(#one)" stroke="none" ></circle>
-        <g transform="scale(0.85) translate(0,0)">
-            <text x="22" y="80" class="title2">Mediterranean</text>
-            <text x="15" y="85" class="title2">( Pelagos Sanctuary )</text>
-            <text x="90" y="80" class="title2">Southern Ocean</text>
-            <text x="80" y="85" class="title2" style="font-size: 4.5px;">( South Orkney & Ross sea)</text>
-            <text x="155" y="80" class="title2">North-East Atlantic</text>
-            <text x="145    " y="85" class="title2" style="font-size: 3px;">( Josephine Seamount & Antialtair Seamount)</text>
-
-        </g>
-        </g>
-    </svg>
-    <svg viewBox="0 0 186 100" class="sea4">
-        <rect x="60" y="25" rx="6" ry="6" width="60" height="60"
-        fill="#4c99f7" stroke-width="0" />
-        <text x="62" y="35" class="title3" style="font-size: 3px;">( ในเมื่อมนุษย์เราต่างรู้ดีว่าเรากำลังเผชิญกับ)</text>
-        <text x="62" y="40" class="title3" style="font-size: 3px;">แล้วทำไมเรายังคงทำให้มันแย่ลงกว่าเดิมอีก?</text>
-        <circle cx="90" cy="52" r="10" fill="white" stroke="none" ></circle>
-        <a href="https://www.greenpeace.org/thailand/act/global-ocean-sanctuaries//">
-            <rect x="72" y="68" rx="3" ry="3" width="35" height="7.5"
-            fill="#ffe1b1" stroke-width="0" id="buttonlink">
-            </rect>
-        ลงชื่อสนับสนุนที่นี่</a>
-    </svg>
-    
-    <div class="show1">
-        <div class="item active" id="place">
-        <div class="data1">
-            <div class="row">
-                <div class="col-md-6">
-                    <svg viewBox="0 0 200 200">
-                        <g transform="translate(0,40)">
-                    <rect x="60" y="25" rx="6" ry="6" fill="none" width="100" height="100"/>
-                        <text x="20.6" y="20.6" class="title3" style="font-size: 12px; fill:#6da8ff;">1. ช่วยเป็นแหล่งเพาะพันธุ์สัตว์ทะเล</text>
-                        <text x="20" y="20" class="title3" style="font-size: 12px; ">1. ช่วยเป็นแหล่งเพาะพันธุ์สัตว์ทะเล</text>
-                        <text x="12" y="35" class="title3">การสร้างเขตคุ้มครองระบบนิเวศทางทะเล จะช่วยเพิ่มพื้นที่แหล่งเพาะพันธุ์ของสัตว์ทะเล</text>
-                        <text x="12" y="45" class="title3">จึงส่งผลให้จำนวนสัตว์น้ำและพืชทะเลเพิ่มขึ้น รวมถึงทำหน้าที่เป็นแหล่งเพาะพันธุ์ของ</text>
-                        <text x="12" y="55" class="title3">สัตว์ทะเลที่ถูกคุกคามอย่างวาฬหรือเต่าทะเล ยกตัวอย่างในประเทศไทย ที่มีการอนุรักษ์</text>
-                        <text x="12" y="65" class="title3">หญ้าทะเล ซึ่งเป็นแหล่งที่อยู่อาศัย อนุบาลตัวอ่อน แหล่งหากินและแหล่งหลบซ่อนศัตรู</text>
-                        <text x="12" y="75" class="title3">ของสัตว์ทะเลนานาชนิด</text>
-                    </g>
-                    </svg>
-                </div>  
-                <div class="col-md-6">
-                    <img src="https://i.imgur.com/yvUEnoS.jpg">
+    <div id="first">
+        <div id="cover">
+            <div style="background-image: url(https://imgur.com/pBwEGlt.png);" class="cover-img"></div>
+            <div style="background-image: url(https://imgur.com/ibxPfRS.png);" class="cover-img"></div>
+            <div style="background-image: url(https://imgur.com/FMT1rQ6.png);" class="cover-img" id="pra1"></div>
+            <div style="background-image: url(https://imgur.com/j86fE7I.png);" class="cover-img"></div>
+            <div style="background-image: url(https://imgur.com/Qpgxu3i.png);" class="cover-img"></div>
+            <div style="background-image: url(https://imgur.com/fB9HU4e.png);" class="cover-img" id="pra2"></div>
+            <div style="background-image: url(https://imgur.com/kjGGopX.png);" class="cover-img" id="font30"></div>
+            <div style="background-image: url(https://imgur.com/lz7lp67.png);" class="cover-img"></div>
+            <!-- <div style="background-color: #040330;position: absolute;width: 100vw;height: 5vw;top: 100vw;"></div> -->
+            <div style="background-image: url(https://imgur.com/p7wCni5.png);" class="cover-img" id="mt1"></div>
+            <div style="background-image: url(https://imgur.com/UvS8Hig.png);" class="cover-img" id="light"></div>
+            <div style="background-image: url(https://imgur.com/qenI56q.png);" class="cover-img"></div>
+            <div style="background-image: url(https://imgur.com/pwQj4nf.png);" class="cover-img"></div>
+            <!-- <div style="background-image: url(https://imgur.com/kjGGopX.png);" class="cover-img" id="font30"></div> -->
+            <!-- <div style="background-image: url(https://i.imgur.com/SdQnElC.png);" class="cover-img"></div> -->
+        </div>
+    </div>
+    <div id="sec">
+        <p class="title2"><span style="color:#005c83; text-shadow: -0.75vw 0px 0px  #83daff;position: relative;left: -2%;" class="samsib">30%</span>ของมหาสมุทรที่กำหนดเป็นพื้นที่สำหรับเขตคุ้มครองระบบนิเวศทางทะเล<br>โดยมีหัวใจหลักในการอนุรักษ์ ปกป้อง และฟื้นฟูความหลากหลายทางชีวภาพของมหาสมุทร<br>ภายในระยะเวลา 10 ปี ระหว่างปี 2021 - 
+        <span class="samsib" style="text-shadow: 1vw 0px 0px #005c83;position: relative;top: 2vw;"><span style="text-shadow: none;color: #005c83;">20</span>30</span></p>
+        <p class="title2 text2">ในปัจจุบัน มหาสมุทรของโลกเราประสบวิกฤตสภาพภูมิอากาศ <br>สภาวะความเป็นกรดของมหาสมุทร การทำประมงเกินขนาด และการขุด<br>เหมืองใต้ทะเล ซึ่งวิกฤตเหล่านี้ส่งผลให้ระบบนิเวศทางทะเลสูญเสีย</p>
+        <p class="title2 text2" style="top:65.5%;text-indent: 0;">เราจึงต้องผลักดันแผน 30x30 เพื่อฟื้นฟูระบบนิเวศทางทะเลให้กลับมา <br>อุดมสมบูรณ์ ซึ่งวิกฤตต่างๆ ที่เราพูดถึงเกิดจาก</p>
+    </div>
+    <div id="third">
+        <div class="part1">
+            <div class="pic"></div>
+            <p class="pramong head">การประมงเกินขนาด</p>
+            <p class="pramong">การทำประมงที่เกินขนาดจะส่งผลให้สัตว์น้ำในทะเลมีจำนวนลดลงเรื่อยๆ รวมถึงอุปกรณ์ต่างๆ ที่ใช้ในการทำประมงอย่างเศษอวนทำให้สัตว์ทะเลเสียชีวิตมากมาย อีกทั้งยังส่งผลกระทบต่อแนวปะการัง <br>ดอกไม้ทะเล และสัตว์หน้าดินอีกด้วย</p>
+        </div>
+        <!-- <div style="position: absolute; width: 100%;height: 50%;background-color: lightcyan;"></div> -->
+        <div class="part2">
+            <div class="pic2"></div>
+            <p class="koodmine head">การขุดเหมืองใต้ทะเล</p>
+            <p class="koodmine">การขุดเหมืองแร่ใต้ทะเลมีเป้าหมายเพื่อการสกัดแร่หายากต่างๆ <br>และได้ทำการส่งเครื่องจักรขนาดใหญ่ลงไปใต้ทะเล ซึ่งเครื่องจักรนี้<br>จะลงไปทำลายแหล่งที่อยู่อาศัยของสิ่งมีชีวิต และยังเป็นตัวทำลาย<br>ระบบกักเก็บคาร์บอนใต้ท้องทะเล ส่งผลกระทบอย่างรุนแรงต่อ<br>ความหลากหลายทางชีวภาพของสัตว์ และสิ่งแวดล้อมรวมทั้ง<br>การเปลี่ยนแปลงของสภาพอากาศ</p>
+        </div>
+    </div>
+    <div id="forth">
+        <p class="head get">ผลที่ได้รับจากการทำแผน       <span style="font-size: 6vw;font-family: 'Concert One';">30 x 30 ?</span></p>
+            <div class="items">
+                <div class="item active" >
+                    <img src="https://i.imgur.com/uUBDyhH.png" id="place">
+                </div>
+                <div class=" item next" >
+                    <img src="https://i.imgur.com/p4NSGyQ.png" id="more">
+                </div>
+                <div class="item" >
+                    <img src="https://i.imgur.com/LwS03PE.png" id="laklai">
+                </div>
+                <div class="item" >
+                    <img src="https://i.imgur.com/PK2OTNB.png" id="chain">
+                </div>
+                <div class="item prev" >
+                    <img src="https://i.imgur.com/qeQMysx.png" id="eco">
+                </div>
+                <div class="button-container" style="left: -15vw;">
+                    <div class="button" ><i class="material-icons-round" style="font-size:3.5vw;position: relative;left: 0vw;top: 0.2vw;">keyboard_arrow_left</i></div>
+                </div>
+                <div class="button-container" style="left: 15vw;">
+                    <div class="button" ><i class="material-icons-round" style="font-size:3.5vw;position: relative;left: 0.25vw;top: 0.2vw;">keyboard_arrow_right</i></div>
                 </div>
             </div>
+    </div>
+    <div id="fifth">
+        <p class="head start">พื้นที่ที่เริ่มทำโครงการ       <span style="font-size: 6vw;font-family: 'Concert One';">30 x 30</span></p>
+        <div id="tale">
+            <div class='pictale' style="background-image: url(https://imgur.com/HeDqD5S.png);background-size: cover;width: 24.5vw;height: 24.5vw;left: 4.35vw;top: 5.75vw;"></div>
+            <div class='pictale nam1' style="background-image: url(https://imgur.com/CpLxeEo.png);"></div>
+            <p class="title2 taletext">Mediterranean</p>
+            <p class="title2 taletext2" style="font-size: 2.25vw;">( Pelagos Sanctuary )</p>
+        </div>
+        <div id="tale" style="left: calc(100%/3);">
+            <div class='pictale' style="background-image: url(https://imgur.com/BnmyugN.png);background-size: cover;width: 24.3vw;height: 24.3vw;left: 3.8vw;top: 5.75vw;"></div>
+            <div class='pictale' style="background-image: url(https://imgur.com/AaTtdla.png);"></div>
+            <p class="title2 taletext">Southern Ocean</p>
+            <p class="title2 taletext2" style="left: 3.5vw;">( South Orkney & Ross sea)</p>
+        </div>
+        <div id="tale" style="left: calc(100%/3*2);">
+            <div class='pictale' style="background-image: url(https://imgur.com/Bkelnoy.png);background-size: cover;width: 24.5vw;height: 24.5vw;left: 4.35vw;top: 5.75vw;"></div>
+            <div class='pictale' style="background-image: url(https://imgur.com/5sdP6J0.png);"></div>
+            <p class="title2 taletext" style="left: 4.8vw;">North-East Atlantic</p>
+            <p class="title2 taletext2"  style="font-size: 1.45vw; left: -0.5vw; top:36.2vw">( Josephine Seamount & Antialtair Seamount)</p>
+        </div>
+    </div>
+
+    <!-- ซ่อนแอบ -->
+    <div class="show1">
+        <div class="data1">
+                <div class="pichid" style="background-image: url(https://i.imgur.com/yvUEnoS.jpg);">
+                </div>
+                <p class="title3 headtitle3">
+                    1. ช่วยเป็นแหล่งเพาะพันธุ์สัตว์ทะเล
+                </p>
+                <p class="title3">
+                    การสร้างเขตคุ้มครองระบบนิเวศทางทะเล จะช่วยเพิ่มพื้นที่แหล่งเพาะพันธุ์ของสัตว์ทะเล<br>จึงส่งผลให้จำนวนสัตว์น้ำและพืชทะเลเพิ่มขึ้น รวมถึงทำหน้าที่เป็นแหล่งเพาะพันธุ์ของ<br>สัตว์ทะเลที่ถูกคุกคามอย่างวาฬหรือเต่าทะเล ยกตัวอย่างในประเทศไทย ที่มีการอนุรักษ์<br>หญ้าทะเล ซึ่งเป็นแหล่งที่อยู่อาศัย อนุบาลตัวอ่อน แหล่งหากินและแหล่งหลบซ่อนศัตรู<br>ของสัตว์ทะเลนานาชนิด
+                </p>
             <span class="close">&times;</span>     
         </div>
     </div>
     </div>
     <div class="show2">
         <div class="data2">
-            <div class="row">
-               <div class="col-md-6">
-                   <svg viewBox="0 0 200 200">
-                      <g transform="translate(0,40)">
-                        <rect x="60" y="25" rx="6" ry="6" fill="none" width="100" height="100"/>
-                        <text x="20.6" y="20.6" class="title3" style="font-size: 11px; fill:#6da8ff;">2. มีความหลากหลายทางชีวภาพมากขึ้น</text>
-                        <text x="20" y="20" class="title3" style="font-size: 11px; ">2. มีความหลากหลายทางชีวภาพมากขึ้น</text>
-                        <text x="12" y="35" class="title3">การสร้างเขตคุ้มครองจะช่วยฟื้นฟูทรัพยากรทางทะเล และเป็นพื้นที่อยู่อาศัยสำหรับ</text>
-                        <text x="12" y="45" class="title3">สัตว์ทะเลให้เจริญเติบโตได้ จึงส่งผลให้มีความหลากหลายทางชีวภาพ ซึ่งความหลากหลาย</text>
-                        <text x="12" y="55" class="title3">ทางชีวภาพเป็นสิ่งสำคัญที่ทำให้สิ่งมีชีวิตสามารถดำรงอยู่ ได้แม้ว่าสภาพแวดล้อมจะ</text>
-                        <text x="12" y="65" class="title3">เปลี่ยนแปลงอยู่เสมอ</text>
-                        </g>
-                    </svg>
-                </div>  
-                <div class="col-md-6">
-                    <img src="https://i.imgur.com/L59ylyS.png">
+                <div class="pichid" style="background-image: url(https://i.imgur.com/L59ylyS.png);">
                 </div>
-            </div>
+                <p class="title3 headtitle3" style="left: 53%;">
+                    2. มีความหลากหลายทางชีวภาพมากขึ้น
+                </p>
+                <p class="title3">
+                    การสร้างเขตคุ้มครองจะช่วยฟื้นฟูทรัพยากรทางทะเล และเป็นพื้นที่อยู่อาศัยสำหรับ<br>สัตว์ทะเลให้เจริญเติบโตได้ จึงส่งผลให้มีความหลากหลายทางชีวภาพ<br>ซึ่งความหลากหลายทางชีวภาพเป็นสิ่งสำคัญที่ทำให้สิ่งมีชีวิตสามารถดำรงอยู่ได้<br>แม้ว่าสภาพแวดล้อมจะเปลี่ยนแปลงอยู่เสมอ
+                </p>
             <span class="close">&times;</span>     
         </div>
     </div>
     <div class="show3">
         <div class="data3">
-            <div class="row">
-                <div class="col-md-6">
-                    <svg viewBox="0 0 200 200">
-                       <g transform="translate(0,40)">
-                         <rect x="60" y="25" rx="6" ry="6" fill="none" width="100" height="100"/>
-                         <text x="20.6" y="20.6" class="title3" style="font-size: 13px; fill:#6da8ff;">3. ปกป้องห่วงโซ่อาหารใต้ทะเล</text>
-                         <text x="20" y="20" class="title3" style="font-size: 13px; ">3. ปกป้องห่วงโซ่อาหารใต้ทะเล</text>
-                         <text x="12" y="35" class="title3">การสร้างเขตคุ้มครองจะช่วยทำให้พื้นที่บริเวณนั้นเกิดสมดุลทางห่วงโซ่อาหารใต้ทะเล</text>
-                         <text x="12" y="45" class="title3"> ซึ่งจะทำให้ระบบนิเวศทางทะเลอุดมสมบูรณ์</text>
-                         </g>
-                     </svg>
-                 </div>  
-                 <div class="col-md-6">
-                     <img src="https://i.imgur.com/lBNJypb.png">
+                 <div class="pichid" style="background-image: url(https://i.imgur.com/lBNJypb.png);">
                  </div>
-             </div>
+                 <p class="title3 headtitle3">
+                    3. ปกป้องห่วงโซ่อาหารใต้ทะเล
+                </p>
+                 <p class="title3">
+                    การสร้างเขตคุ้มครองจะช่วยทำให้พื้นที่บริเวณนั้นเกิดสมดุลทางห่วงโซ่อาหารใต้ทะเล<br>ซึ่งจะทำให้ระบบนิเวศทางทะเลอุดมสมบูรณ์
+                </p>
              <span class="close">&times;</span>  
         </div>   
     </div>
     <div class="show4">
-        <div class="row">
-            <div class="col-md-6">
-                <svg viewBox="0 0 200 200">
-                   <g transform="translate(0,40)">
-                     <rect x="60" y="25" rx="6" ry="6" fill="none" width="100" height="100"/>
-                     <text x="20.6" y="20.6" class="title3" style="font-size: 13px; fill:#6da8ff;">4. ฟื้นฟูเศรษฐกิจระดับชุมชน</text>
-                     <text x="20" y="20" class="title3" style="font-size: 13px; ">4. ฟื้นฟูเศรษฐกิจระดับชุมชน</text>
-                     <text x="12" y="35" class="title3">การสร้างเขตคุ้มครองระบบนิเวศทางทะเลจะช่วยฟื้นฟูการท่องเที่ยวและการทำประมง</text>
-                     <text x="12" y="45" class="title3">นอกเขตคุ้มครอง</text>
-                     </g>
-                 </svg>
-             </div>  
-             <div class="col-md-6">
-                 <img src="https://chumchonthai.or.th/sites/default/files/2564-01-15_1-02.jpg">
+        <div class="data4">
+             <div class="pichid" style="background-image: url(https://chumchonthai.or.th/sites/default/files/2564-01-15_1-02.jpg);">
              </div>
-         </div>
+             <p class="title3 headtitle3">
+                4. ฟื้นฟูเศรษฐกิจระดับชุมชน
+            </p>
+             <p class="title3">
+                การสร้างเขตคุ้มครองระบบนิเวศทางทะเลจะช่วยฟื้นฟูการท่องเที่ยวและการทำประมง<br>นอกเขตคุ้มครอง
+            </p>
+        </div>
          <span class="close">&times;</span>  
-    </div>   
+    </div> 
 </div>
 
 <div class="show5">
-    <div class="row">
-        <div class="col-md-6">
-            <svg viewBox="0 0 200 200">
-               <g transform="translate(0,40)">
-                 <rect x="60" y="25" rx="6" ry="6" fill="none" width="100" height="100"/>
-                 <text x="20.6" y="20.6" class="title3" style="font-size: 9px; fill:#6da8ff;">5. ช่วยปกป้องพวกเราจากวิกฤตสภาพภูมิอากาศ</text>
-                 <text x="20" y="20" class="title3" style="font-size: 9px; ">5. ช่วยปกป้องพวกเราจากวิกฤตสภาพภูมิอากาศ</text>
-                 <text x="12" y="35" class="title3">สัตว์ทะเลและพืชทะเล สามารถดูดซับและกักเก็บก๊าซคาร์บอนไดออกไซด์ในชั้นบรรยากาศได้</text>
-                 <text x="12" y="45" class="title3">โดยก๊าซคาร์บอนไดออกไซด์จะถูกส่งผ่านห่วงโซ่อาหาร ซึ่งในที่สุดก๊าซคาร์บอนไดออกไซด์</text>
-                 <text x="12" y="55" class="title3">ก็จะจมลงไปใต้มหาสมุทรพร้อมกับซากสัตว์ทะเล อีกทั้งอุจจาระของวาฬ หรือสิ่งมีชีวิตอื่นๆ</text>
-                 <text x="12" y="65" class="title3">อย่างแพลงก์ตอนพืชก็มีส่วนช่วยในการดูดซับและแยกก๊าซคาร์บอนไดออกไซด์</text> 
-                 <text x="12" y="75" class="title3">จากชั้นบรรยากาศลงสู่ทะเล 
-                </text> 
-                </g>
-             </svg>
-         </div>  
-         <div class="col-md-6">
-             <img src="https://i.imgur.com/g3XBNdM.png">
+    <div class="data5">
+         <div class="pichid" style="background-image: url(https://i.imgur.com/g3XBNdM.png);">
          </div>
+         <p class="title3 headtitle3" style="font-size: 2.1vw;text-shadow: 0.12vw 0.12vw 0vw #6da8ff;">
+            5. ช่วยปกป้องพวกเราจากวิกฤตสภาพภูมิอากาศ
+        </p>
+         <p class="title3">
+            สัตว์ทะเลและพืชทะเล สามารถดูดซับและกักเก็บก๊าซคาร์บอนไดออกไซด์ในชั้นบรรยากาศได้<br>โดยก๊าซคาร์บอนไดออกไซด์จะถูกส่งผ่านห่วงโซ่อาหาร ซึ่งในที่สุดก๊าซคาร์บอนไดออกไซด์<br>ก็จะจมลงไปใต้มหาสมุทรพร้อมกับซากสัตว์ทะเล อีกทั้งอุจจาระของวาฬ หรือสิ่งมีชีวิตอื่นๆ <br>อย่างแพลงก์ตอนพืชก็มีส่วนช่วยในการดูดซับและแยกก๊าซคาร์บอนไดออกไซด์จาก<br>ชั้นบรรยากาศลงสู่ทะเล
+        </p>
      </div>
      <span class="close">&times;</span>  
-</div>   
-</div>
-    
-    <script>
-        const show1 = document.querySelector(".show1");
-        const show2 = document.querySelector(".show2");
-        const show3 = document.querySelector(".show3");
-        const show4 = document.querySelector(".show4");
-        const show5 = document.querySelector(".show5");
-        
-        const data1 = document.querySelector(".data1");
-        const data2 = document.querySelector(".data2");
-        const data3 = document.querySelector(".data3");
-        const data4 = document.querySelector(".data4");
-        const data5 = document.querySelector(".data5");
-        
-        document.getElementById("place").onclick = function(){
-            show1.style.display = "block";
-            data1.style.display = "block";
-        };
-        document.getElementById("more").onclick = function(){
-            show2.style.display = "block";
-            data2.style.display = "block";
-        };
-        document.getElementById("laklai").onclick = function(){
-            show3.style.display = "block";
-            data3.style.display = "block";
-        };
-        document.getElementById("chain").onclick = function(){
-            show4.style.display = "block";
-            data4.style.display = "block";
-        };
-        document.getElementById("eco").onclick = function(){
-            show5.style.display = "block";
-            data5.style.display = "block";
-        };
+</div> 
+<!-- ซ่อนแอบหมดแล้ว -->
 
-        var span = document.getElementsByClassName("close")[0];
-        span.onclick = function() { 
-            show1.style.display = "none";
-            data1.style.display = "none";
+<!-- โหลด -->
+<div id="load">
+    <div class="loader"></div>
+</div>
+<!-- จบโหลด -->
+
+<!-- scroll -->
+<script>
+    window.onload = function() {
+        document.querySelector("#load").style.display = "none";
+    };
+    let pramong = document.querySelector('.pic');
+    let koodmine = document.querySelector('.pic2');
+    let font30 = document.querySelector("#font30");
+    let pra2 = document.querySelector("#pra2");
+    let pra1 = document.querySelector("#pra1");
+    let mt1 = document.querySelector("#mt1");
+
+    window.addEventListener('scroll', function(){
+        var value = window.pageYOffset || document.documentElement.scrollTop;
+        var value2 = Math.floor(value);
+        console.log(Math.floor(value));
+        font30.style.top = value2/55+'%';
+        pra2.style.left = value2/55+'%';
+        pra1.style.right = value2/55+'%';
+        // mt1.style.top = -value2/55+"%";
+        if(value2 >= 2925){
+            pramong.style.animation = "mynewmove 1.5s forwards";
         }
-        var span = document.getElementsByClassName("close")[1];
-        span.onclick = function() { 
-            show2.style.display = "none";
-            data2.style.display = "none";
+        else{
+            pramong.style.animation = "none";
         }
-        var span = document.getElementsByClassName("close")[2];
-        span.onclick = function() { 
-            show3.style.display = "none";
-            data3.style.display = "none";
+        if(value2 >= 4000){
+            koodmine.style.animation = "mynewmove2 1.5s forwards";
         }
-        var span = document.getElementsByClassName("close")[3];
-        span.onclick = function() { 
-            show4.style.display = "none";
-            data4.style.display = "none";
+        else{
+            koodmine.style.animation = "none";
         }
-        var span = document.getElementsByClassName("close")[4];
-        span.onclick = function() { 
-            show5.style.display = "none";
-            data5.style.display = "none";
+    })
+</script>
+
+<!-- script ม้าหมุน -->
+<script>
+            // เพิ่ม ถึง 417
+        const slider = document.querySelector(".items");
+        const slides = document.querySelectorAll(".item");
+        const button = document.querySelectorAll(".button");
+        let current = 0;
+        let prev = 4;
+        let next = 1;
+        for (let i = 0; i < button.length; i++) {
+            button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
         }
-    </script>
+        const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+        const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
+        const gotoNum = number => {
+            current = number;
+            prev = current - 1;
+            next = current + 1;
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+                slides[i].classList.remove("prev");
+                slides[i].classList.remove("next");
+            }
+            if (next == 5) {
+                next = 0;
+            }
+            if (prev == -1) {
+                prev = 4;
+            }
+            slides[current].classList.add("active");
+            slides[prev].classList.add("prev");
+            slides[next].classList.add("next");
+        }
+</script>
+<!-- จบม้าหมุน -->
+
+<!-- script ซ่อนแอบ -->
+<script>
+    const show1 = document.querySelector(".show1");
+    const show2 = document.querySelector(".show2");
+    const show3 = document.querySelector(".show3");
+    const show4 = document.querySelector(".show4");
+    const show5 = document.querySelector(".show5");
+    
+    const data1 = document.querySelector(".data1");
+    const data2 = document.querySelector(".data2");
+    const data3 = document.querySelector(".data3");
+    const data4 = document.querySelector(".data4");
+    const data5 = document.querySelector(".data5");
+    
+    document.getElementById("place").onclick = function(){
+        show1.style.display = "block";
+        data1.style.display = "block";
+    };
+    document.getElementById("more").onclick = function(){
+        show2.style.display = "block";
+        data2.style.display = "block";
+    };
+    document.getElementById("laklai").onclick = function(){
+        show3.style.display = "block";
+        data3.style.display = "block";
+    };
+    document.getElementById("chain").onclick = function(){
+        show4.style.display = "block";
+        data4.style.display = "block";
+    };
+    document.getElementById("eco").onclick = function(){
+        show5.style.display = "block";
+        data5.style.display = "block";
+    };
+
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() { 
+        show1.style.display = "none";
+        data1.style.display = "none";
+    }
+    var span = document.getElementsByClassName("close")[1];
+    span.onclick = function() { 
+        show2.style.display = "none";
+        data2.style.display = "none";
+    }
+    var span = document.getElementsByClassName("close")[2];
+    span.onclick = function() { 
+        show3.style.display = "none";
+        data3.style.display = "none";
+    }
+    var span = document.getElementsByClassName("close")[3];
+    span.onclick = function() { 
+        show4.style.display = "none";
+        data4.style.display = "none";
+    }
+    var span = document.getElementsByClassName("close")[4];
+    span.onclick = function() { 
+        show5.style.display = "none";
+        data5.style.display = "none";
+    }
+</script>
+<!-- script จบ -->
+
 </body>
 </html>
