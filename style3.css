@@ -88,8 +88,8 @@ body{
     background-color: #155cd6;
 }
 .pic{
-    width: 34.5%;
-    height: 19.5%;
+    width: 32.75%;
+    height: 17.75%;
     /* background-color: rgb(255, 255, 255); */
     border-radius: 100%;
     top: 27%;
@@ -104,7 +104,8 @@ body{
     height: 45%;
     position: absolute;
     bottom: 0;
-    background-image: url(https://imgur.com/xgUabdZ.png);
+    background: linear-gradient(#145dd5,#377ff7);
+    /* background-image: url(https://imgur.com/xY7smNj.png); */
     background-size: cover;
     /* background-image: url(https://media.discordapp.net/attachments/787691312186916874/845543487621038090/image0.png?width=1191&height=670);
     background-position: right; */
@@ -240,8 +241,11 @@ i{
     position: relative;
     width: 100%;
     height: 77.5vw;
-    background-color: #ffe1b1;
+    background-color: #efe7c4;
     overflow: hidden;
+    background-image: url(https://imgur.com/pjcE4Pr.png);
+    background-size: 100% 65%;
+    background-repeat: no-repeat;
 }
 .close {
     position: absolute;
