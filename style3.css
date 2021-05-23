@@ -8,6 +8,7 @@ body{
     /* background-color: #ffe1b1; */
     /* min-height: 1500px; */
     background-color: #060534;
+    scroll-behavior: smooth;
 }
 #first{
     position: relative;
@@ -34,7 +35,7 @@ body{
     top:5%;
     background-image: url(https://imgur.com/l1nZ6te.png);
     background-size: cover;
-    background-position: center;
+    background-position: center ;
 }
 #why{
     position: absolute;
@@ -42,7 +43,8 @@ body{
     height: 50%;
     top: 50%;
     background-image: url(https://imgur.com/uzs7kPG.png);
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .cover-img{
     position: absolute;
@@ -81,12 +83,13 @@ body{
     width: 100%;
     height: 170vw;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
     background-size: 150% 100%;
+    background-color: #155cd6;
 }
 .pic{
-    width: 37%;
-    height: 22%;
+    width: 37.75%;
+    height: 22.75%;
     /* background-color: rgb(255, 255, 255); */
     border-radius: 100%;
     top: 27%;
@@ -152,10 +155,15 @@ body{
     left: 6.5%;
 }
 #forth{
+    overflow: hidden;
     position: relative;
     background-color: #59a5e4;
     width: 100%;
     height: 85vw;
+    background-image: url(https://imgur.com/SUGJsev.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
 }
 .head.get{
     left: 9.5%;
@@ -163,7 +171,7 @@ body{
     font-family: 'Mitr'; 
     color:#ffffff;
     position: absolute;
-    top: 20%;
+    top: 23%;
     text-shadow: 0.5vw 0.3vw 0px #12668d;
 }
 .head.start{
@@ -447,7 +455,14 @@ i{
     top: 26.5%;
     left: 54%;
 }
-
+#textcall{
+    font-size: 1.75vw;
+    font-family: 'Mitr', sans-serif;
+    position: absolute;
+    color: #272331;
+    top: 40%;
+    left: 15%;
+}
 
   @keyframes mynewmove {
     from {
@@ -495,4 +510,25 @@ i{
 }
 @keyframes kayab3{
     40%{transform: translateX(-1.5vw) translateY(-1.5vw);}
+}
+#sixth{
+    width: 100%;
+    height: 200vw;
+    background-color: #aa6464;
+    position: relative;
+}
+
+#pra{
+    right: 1.5vw;
+    width: 70%;
+    position: absolute;
+    height: 70%;
+    background-size: cover;
+    top: -25%;
+    background-image: url(https://imgur.com/ZXgyHTW.png);
+    background-position: right;
+    transition: 1.5s;
+}
+.cover-img.wave{
+    bottom: -51.5%;
 }
