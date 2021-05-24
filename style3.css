@@ -520,8 +520,8 @@ i{
 }
 #sixth{
     width: 100%;
-    height: 500vw;
-    background-color: #aa6464;
+    height: 70vw;
+    background-color: #efe7c4;
     position: relative;
 }
 
@@ -559,4 +559,29 @@ i{
     left: 19%;
     text-indent: 9vw;
     line-height: 200%;
+}
+
+#bright{
+    /* display: none; */
+    left: 80%;
+    top: 33%;
+    width: 20vw;
+    height: 20vw;
+    opacity: 0;
+    animation: appear 2s;
+    animation-fill-mode: forwards;
+    z-index: 99;
+}
+#bleft{
+    display: none;
+    left: 10%;
+    top: 33%;
+    width: 20vw;
+    height: 20vw;
+    opacity: 0;
+    animation: appear 2s;
+    animation-fill-mode: forwards;
+}
+#buttonr:hover{
+    color: rgb(255, 255, 255);
 }
