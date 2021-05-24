@@ -227,7 +227,7 @@ i{
     display: none;
 }
 .picsec,.piclast{
-    opacity: 0.8;
+/*     opacity: 0.8; */
     width: 26vw;
     height: 26vw;
     top: 38%;
