@@ -562,7 +562,7 @@ i{
 }
 
 #bright{
-    /* display: none; */
+    display: none;
     left: 80%;
     top: 33%;
     width: 20vw;
