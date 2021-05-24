@@ -153,9 +153,10 @@
          <p class="textcall" style="top: 35%;left: 25%;font-size: 1.75vw;">
             หนึ่งเสียงของคุณจะช่วยให้เกิดเขตคุ้มครองระบบนิเวศทางทะเลและผลักดันให้<br><span style="position: relative;left: 6%;">องค์กรสหประชาชาติเดินหน้าแก้ไขปัญหาภัยคุกคามที่มีต่อมหาสมุทร</span>
         </p>
-        <a href="https://act.greenpeace.org/page/42720/petition/1?ea.tracking.id=Planet4&utm_campaign=oceans&utm_source=website&utm_medium=planet4" class="title2 button3">ร่วมลงชื่อสนับสนุน</a>
-         <button type="button" id="bright" ><i class="material-icons-round" id="buttonr" style="font-size:15vw;cursor: pointer;">arrow_right</i></button>
-         <button type="button" id="bleft"><i class="material-icons-round" id="buttonl" style="font-size:15vw;cursor: pointer;">arrow_left</i></button>
+        <a href="https://act.greenpeace.org/page/42720/petition/1?ea.tracking.id=Planet4&utm_campaign=oceans&utm_source=website&utm_medium=planet4" target="_blank" class="title2 button3">ร่วมลงชื่อสนับสนุน</a>
+        <a href="https://www.greenpeace.org/aotearoa/publication/30-x-30-a-blueprint-for-ocean-protection/" target="_blank" class="title2 button4">ศึกษาข้อมูลเพิ่มเติม</a>
+        <button type="button" id="bright" ><i class="material-icons-round" id="buttonr" style="font-size:15vw;cursor: pointer;">arrow_right</i></button>
+        <button type="button" id="bleft"><i class="material-icons-round" id="buttonl" style="font-size:15vw;cursor: pointer;">arrow_left</i></button>
         </div>
     </div>
 
@@ -256,6 +257,7 @@
     let b_left = document.querySelector("#bleft");
     let buttonl = document.querySelector("#buttonl");
     let button3 = document.querySelector(".button3");
+    let button4 = document.querySelector(".button4");
     var check = 0;
 
     $(window).scroll(function () {
@@ -324,6 +326,7 @@
             call[9].style.display = "none";
             call[10].style.display = "block";
             button3.style.display = "inline-block";
+            button4.style.display = "inline-block";
             b_right.style.display = "none";
         }
         check += 1;
@@ -371,6 +374,7 @@
             call[9].style.display = "block";
             call[10].style.display = "none";
             button3.style.display = "none";
+            button4.style.display = "none";
             b_right.style.display = "block";
         }
         check -= 1;
