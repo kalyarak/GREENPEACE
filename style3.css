@@ -600,7 +600,8 @@ button:focus {
     transform: scale(1.15);
     opacity: 1;
 }
-.button3{
+.button3,.button4{
+    opacity: 0;
     display: none;
     border: 2px solid #001654;
     padding: 10px 20px;
@@ -609,12 +610,18 @@ button:focus {
     transition: 0.3s;
     position: absolute;
     top: 49.5%;
-    left: 42.5%;
-    /* border-radius: 5%; */
+    left: 32.5%;
+    animation: appear 2s;
+    animation-fill-mode: forwards;
+    border-radius: 25vw;
   }
   
-  .button3:hover {
+  .button3:hover, .button4:hover {
     background: #001654;
     color: #fff;
     text-decoration: none;
+  }
+
+  .button4{
+      left: 52.5%;
   }
