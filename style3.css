@@ -549,3 +549,14 @@ i{
 @keyframes appear{
     100%   { opacity: 1; }
   }
+
+  .plan{
+    font-family: 'Mitr', sans-serif;
+    color: white;
+    font-size: 2vw;
+    position: absolute;
+    top: 8%;
+    left: 19%;
+    text-indent: 9vw;
+    line-height: 200%;
+}
