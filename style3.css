@@ -285,7 +285,7 @@ i{
     position: absolute;
     background-size: cover;
 }
-#tale{
+.tale{
     margin: 0;
     height: 70%;
     position: absolute;
@@ -309,11 +309,13 @@ i{
     top: 32.5vw;
     font-size: 2.5vw;
     left: 7vw;
+    color: #021b5f;
 }
 .taletext2{
     top: 35.5vw;
     font-size: 2vw;
     left: 4.5vw;
+    color: #021b5f;
 }
 #load{
     /* background-image: linear-gradient(to bottom right, #a3cbff,#25b); */
@@ -459,13 +461,14 @@ i{
     top: 26.5%;
     left: 54%;
 }
-#textcall{
-    font-size: 1.75vw;
+.textcall{
+    font-size: 5vw;
     font-family: 'Mitr', sans-serif;
-    position: absolute;
+    position: fixed;
     color: #272331;
-    top: 40%;
+    top: 30%;
     left: 15%;
+    display: none;
 }
 
   @keyframes mynewmove {
@@ -517,7 +520,7 @@ i{
 }
 #sixth{
     width: 100%;
-    height: 200vw;
+    height: 500vw;
     background-color: #aa6464;
     position: relative;
 }
@@ -536,3 +539,13 @@ i{
 .cover-img.wave{
     bottom: -51.5%;
 }
+.textcall{
+    display: none;
+    opacity: 0;
+    animation: appear 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear{
+    100%   { opacity: 1; }
+  }
