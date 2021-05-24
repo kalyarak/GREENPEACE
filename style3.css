@@ -592,7 +592,7 @@ button:focus {
 }
 #buttonr,#buttonl{
     transition: 0.5s;
-    color: #ff8580;
+    color: #003891;
     opacity: 0.7;
 }
 #buttonr:hover,#buttonl:hover{
