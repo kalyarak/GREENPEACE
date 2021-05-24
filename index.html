@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="style3.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+        <link rel=icon type=image/png href=https://i.imgur.com/KiI8vHV.png />
         <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     </head>
 <body>
@@ -94,7 +95,7 @@
                 </div>
             </div>
     </div>
-   <div id="fifth">
+    <div id="fifth">
         <!-- <p class="head start">พื้นที่ที่เริ่มทำโครงการ       <span style="font-size: 6vw;font-family: 'Concert One';">30 x 30</span></p> -->
         <div style="background-image: url(https://imgur.com/IxzVwDX.png);position: absolute;width: 100%;height: 60%;background-repeat: no-repeat;background-size: 95%;left: 4%;"></div>
         <div class="tale">
@@ -118,42 +119,39 @@
         </div>
     </div>
     <div id="sixth">
-        <p class="textcall" style="top: 40%;left: 24%;">
+        <div style="background-image: url(https://imgur.com/3ywsmE9.png);top: 20%;width: 100%;height: 80%;position: absolute;background-size: 100% 100%;background-repeat: no-repeat;"></div>
+        <p class="textcall" style="top: 58%;left: 24%;display: block;">
             พวกคุณชอบไปทะเลกันไหม?
         </p>
-        <p class="textcall" style="top: 45%;left: 22%;font-size: 2.5vw;">
+        <p class="textcall" style="top: 61%;left: 22%;font-size: 2.5vw;">
             อากาศบริสุทธิ์ เสียงคลื่น หรือแม้กระทั่งอาหารทะเลนานาชนิด
         </p>
-        <p class="textcall" style="top: 44%; left: 25%; font-size: 3.2vw;">
+        <p class="textcall" style="top: 60%; left: 25%; font-size: 3.2vw;">
             ท้องทะเลให้สิ่งต่างๆ เหล่านี้แก่เรามากมาย
         </p>
-        <p class="textcall" style="top: 42%;  left: 23%; font-size: 3.8vw;">
+        <p class="textcall" style="top: 59.5%;  left: 23%; font-size: 3.8vw;">
             แล้วเราล่ะ เคยทำอะไรให้ท้องทะเลบ้าง?
         </p>
-        <p class="textcall" style="top: 43.5%;left: 22.5%; font-size: 2.6vw;">
+        <p class="textcall" style="top: 61%;left: 22.5%; font-size: 2.6vw;">
             เนื่องจากสิ่งมีชีวิตใต้ทะเลไม่สามารถพูดออกมาให้เราได้ยิน
         </p>
-        <p class="textcall" style="top: 42%;left: 23%; font-size: 3.8vw;">
+        <p class="textcall" style="top: 59.5%;left: 23%; font-size: 3.8vw;">
             ว่าพวกเขาประสบพบเจอปัญหาอะไรอยู่
         </p>
-        <p class="textcall" style="top: 40%;left: 30%;">
+        <p class="textcall" style="top: 58%;left: 30%;">
             นี่จึงเป็นหน้าที่ของเรา
         </p>
-        <p class="textcall" style="top: 43%;left: 25%;font-size: 3.8vw;">
+        <p class="textcall" style="top: 59.5%;left: 25%;font-size: 3.8vw;">
             ที่จะต้องส่งเสียงออกไปแทนพวกเขา
         </p>
-        <p class="textcall" style="top: 43%;left: 23%;font-size: 3.8vw;">
+        <p class="textcall" style="top: 59.5%;left: 23%;font-size: 3.8vw;">
             เพื่อร่วมกันฟื้นฟูมหาสมุทรของโลกใบนี้
         </p>
-        <p class="textcall" style="top: 40%;left: 30%">
+        <p class="textcall" style="top: 58%;left: 30%">
             ให้อุดมสมบูรณ์ต่อไป
         </p>
-        <div id="bright" style="position: fixed;">
-            <i class="material-icons-round" id="buttonr" style="color: black;font-size:15vw;cursor: pointer;">arrow_right</i>
-        </div>
-        <div id="bleft" style="position: fixed;">
-            <i class="material-icons-round" id="buttonl" style="color: black;font-size:15vw;cursor: pointer;">arrow_left</i>
-        </div>
+        <button type="button" id="bright" ><i class="material-icons-round" id="buttonr" style="font-size:15vw;cursor: pointer;">arrow_right</i></button>
+        <button type="button" id="bleft"><i class="material-icons-round" id="buttonl" style="font-size:15vw;cursor: pointer;">arrow_left</i></button>
     </div>
 
     <!-- ซ่อนแอบ -->
@@ -228,7 +226,7 @@
 <!-- ซ่อนแอบหมดแล้ว -->
 
 <!-- โหลด -->
-<div id="load">
+<div id="load" style="overflow: hidden;">
     <div class="loader"></div>
 </div>
 <!-- จบโหลด -->
@@ -275,21 +273,6 @@
         }
 
         // call to acction
-        if(scrollv>=8100){
-                call[0].style.display = "block";
-                b_right.style.display = "block";
-                if(check != 0){
-                    call[0].style.display = "none";
-                }
-        }
-        else{
-            b_right.style.display = "none";
-            b_left.style.display = "none";
-            check = 0;
-            for(var i=0;i<call.length;i++){
-                call[i].style.display = "none";
-            }
-        }
     })
     
     buttonr.addEventListener("click", function() {
