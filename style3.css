@@ -227,7 +227,7 @@ i{
     display: none;
 }
 .picsec,.piclast{
-/*     opacity: 0.8; */
+    opacity: 0.8;
     width: 26vw;
     height: 26vw;
     top: 38%;
@@ -396,7 +396,7 @@ i{
     /* font-size: 32px; */
     cursor: pointer;
     position: relative;
-    opacity: 0.75;
+/*     opacity: 0.75; */
     transition: all 300ms ease-in-out;
   }
   
