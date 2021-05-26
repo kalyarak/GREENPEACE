@@ -53,7 +53,8 @@
         <div class="part1">
             <div class="part"></div>
             <div class="pic"></div>
-            <p class="plan">ในปัจจุบัน มหาสมุทรของโลกเราประสบวิกฤตสภาพภูมิอากาศ<br>สภาวะความเป็นกรดของมหาสมุทร การทำประมงเกินขนาด และการขุดเหมืองใต้ทะเล <br>ซึ่งวิกฤตเหล่านี้ส่งผลให้ระบบนิเวศทางทะเลสูญเสีย เราจึงต้องผลักดันแผน 30x30 <br>เพื่อฟื้นฟูระบบนิเวศทางทะเลให้กลับมาอุดมสมบูรณ์ ซึ่งวิกฤตที่เราพูดถึงนั้นเกิดจาก
+            <div class="cover-img" style="background-image: url(img30/43.PNG);height: 20%;width: 20%;left: 40%;top: 0.5%;"></div>
+            <p class="plan">ในช่วงทศวรรษที่ผ่านมาที่สิ่งมีชีวิตถูกคุกคามด้วยผลกระทบ<br><span style="left: 9%;position: relative;">จากกิจกรรมหลากหลายของมนุษย์ไม่ว่าจะเป็น</span>
             </p>
             <p class="pramong head">การประมงเกินขนาด</p>
             <p class="pramong">การทำประมงที่เกินขนาดจะส่งผลให้สัตว์น้ำในทะเลมีจำนวนลดลงเรื่อยๆ <br>รวมถึงอุปกรณ์ต่างๆ ที่ใช้ในการทำประมงอย่างเศษอวนทำให้สัตว์ทะเลเสียชีวิต<br> อีกทั้งยังส่งผลกระทบต่อแนวปะการัง ดอกไม้ทะเล และสัตว์หน้าดินอีกด้วย</p>
@@ -126,34 +127,7 @@
     <div id="sixth">
         <div style="background-image: url(img30/29.png);width: 100%;height: 100%;position: absolute;background-size: 100%;background-repeat: no-repeat;background-position: center bottom;"></div>
          <p class="textcall" style="top: 43%;left: 24%;display: block;">
-          พวกคุณชอบไปทะเลกันไหม?
-         </p>
-         <p class="textcall" style="top: 47%;left: 22%;font-size: 2.5vw;">
-          อากาศบริสุทธิ์ เสียงคลื่น หรือแม้กระทั่งอาหารทะเลนานาชนิด
-         </p>
-         <p class="textcall" style="top: 46%; left: 25%; font-size: 3.2vw;">
-          ท้องทะเลให้สิ่งต่างๆ เหล่านี้แก่เรามากมาย
-         </p>
-         <p class="textcall" style="top: 44.5%;  left: 23%; font-size: 3.8vw;">
-          แล้วเราล่ะ เคยทำอะไรให้ท้องทะเลบ้าง?
-         </p>
-         <p class="textcall" style="top: 47%;left: 21.75%; font-size: 2.6vw;">
-          เนื่องจากสิ่งมีชีวิตใต้ทะเลไม่สามารถพูดออกมาให้เราได้ยิน
-         </p>
-         <p class="textcall" style="top: 45%;left: 23%; font-size: 3.8vw;">
-          ว่าพวกเขาประสบพบเจอปัญหาอะไรอยู่
-         </p>
-         <p class="textcall" style="top: 43%;left: 30%;">
-          นี่จึงเป็นหน้าที่ของเรา
-         </p>
-         <p class="textcall" style="top: 45%;left: 24.5%;font-size: 3.8vw;">
-          ที่จะต้องส่งเสียงออกไปแทนพวกเขา
-         </p>
-         <p class="textcall" style="top: 45%;left: 22.5%;font-size: 3.8vw;">
-          เพื่อร่วมกันฟื้นฟูมหาสมุทรของโลกใบนี้
-         </p>
-         <p class="textcall" style="top: 43%;left: 30%">
-          ให้อุดมสมบูรณ์ต่อไป
+          เปล่า
          </p>
          <p class="textcall" style="top: 35%;left: 25%;font-size: 1.75vw;">
             หนึ่งเสียงของคุณจะช่วยให้เกิดเขตคุ้มครองระบบนิเวศทางทะเลและผลักดันให้<br><span style="position: relative;left: 6%;">องค์กรสหประชาชาติเดินหน้าแก้ไขปัญหาภัยคุกคามที่มีต่อมหาสมุทร</span>
@@ -263,6 +237,7 @@
     let buttonl = document.querySelector("#buttonl");
     let button3 = document.querySelector(".button3");
     let button4 = document.querySelector(".button4");
+    let plan = document.querySelector(".plan");
     var check = 0;
 
     $(window).scroll(function () {
@@ -271,6 +246,13 @@
         font30.style.top = scrollv/30+'%';
         pra2.style.left = scrollv/55+'%';
         pra1.style.right = scrollv/55+'%';
+
+        if (scrollv > 2400) {
+            plan.style.animation = "appear 2s forwards";
+        }
+        else{
+            plan.style.animation = "none";
+        }
 
         if (scrollv > 2700) {
             pramong.style.animation = "mynewmove 1.5s forwards";
@@ -291,48 +273,12 @@
     
     buttonr.addEventListener("click", function() {
         if(check==0){
-            b_left.style.display = "block";
             call[0].style.display = "none";
             call[1].style.display = "block";
-        }
-        if(check==1){
-            call[1].style.display = "none";
-            call[2].style.display = "block";
-        }
-        if(check==2){
-            call[2].style.display = "none";
-            call[3].style.display = "block";
-        }
-        if(check==3){
-            call[3].style.display = "none";
-            call[4].style.display = "block";
-        }
-        if(check==4){
-            call[4].style.display = "none";
-            call[5].style.display = "block";
-        }
-        if(check==5){
-            call[5].style.display = "none";
-            call[6].style.display = "block";
-        }
-        if(check==6){
-            call[6].style.display = "none";
-            call[7].style.display = "block";
-        }
-        if(check==7){
-            call[7].style.display = "none";
-            call[8].style.display = "block";
-        }
-        if(check==8){
-            call[8].style.display = "none";
-            call[9].style.display = "block";
-        }
-        if(check==9){
-            call[9].style.display = "none";
-            call[10].style.display = "block";
             button3.style.display = "inline-block";
             button4.style.display = "inline-block";
             b_right.style.display = "none";
+            b_left.style.display = "block";
         }
         check += 1;
     });
@@ -341,46 +287,9 @@
             b_left.style.display = "none";
             call[1].style.display = "none";
             call[0].style.display = "block";
-        }
-        if(check==2){
-            call[2].style.display = "none";
-            call[1].style.display = "block";
-        }
-        if(check==3){
-            call[3].style.display = "none";
-            call[2].style.display = "block";
-        }
-        if(check==4){
-            call[4].style.display = "none";
-            call[3].style.display = "block";
-        }
-        if(check==5){
-            call[5].style.display = "none";
-            call[4].style.display = "block";
-        }
-        if(check==6){
-            call[6].style.display = "none";
-            call[5].style.display = "block";
-        }
-        if(check==7){
-            call[7].style.display = "none";
-            call[6].style.display = "block";
-        }
-        if(check==8){
-            call[8].style.display = "none";
-            call[7].style.display = "block";
-        }
-        if(check==9){
-            call[9].style.display = "none";
-            call[8].style.display = "block";
             b_right.style.display = "block";
-        }
-        if(check==10){
-            call[9].style.display = "block";
-            call[10].style.display = "none";
             button3.style.display = "none";
             button4.style.display = "none";
-            b_right.style.display = "block";
         }
         check -= 1;
     });
