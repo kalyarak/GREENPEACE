@@ -634,14 +634,15 @@ button:focus {
 }
 .thai{
     width: 100%;
-    height: 20%;
+    height: 25%;
     /* background-color: aqua; */
     background-image: url(img30/thai.PNG);
-    background-size: 70%;
+    background-size: 82.5%;
     background-repeat: no-repeat;
     position: relative;
-    left: 18%;
+    left: 3%;
     top: -0%;
+    background-position: center;
 }
 .mayha,.gadai{
     width: 100%;
@@ -655,7 +656,7 @@ button:focus {
     position: absolute;
     background-image: url(img30/มาหยา.PNG);
     background-repeat: no-repeat;
-    background-size: 110%;
+    background-size: 107%;
     transform: rotate(-5deg);
     top: 10%;
     left: 2.5%;
@@ -694,7 +695,7 @@ button:focus {
 }
 .into{
     width: 100%;
-    height: 20%;
+    height: 15%;
     /* background-color: aquamarine; */
     position: relative;
 }
