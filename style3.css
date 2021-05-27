@@ -670,7 +670,7 @@ button:focus {
     background-repeat: no-repeat;
     background-size: 65%;
     left: 60%;
-    top: 2.5%;
+    top: 1.5%;
 }
 .gadaipic{
     width: 50%;
@@ -692,10 +692,26 @@ button:focus {
     background-repeat: no-repeat;
     background-size: 80%;
     left: 9%;
+    top: -1%;
 }
 .into{
     width: 100%;
     height: 15%;
     /* background-color: aquamarine; */
     position: relative;
+}
+.dao,.hoi{
+    width: 50%;
+    height: 120%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    top: -60%;
+    left: -12%;
+}
+.hoi{
+    background-size: 60%;
+    left: 77.5%;
+    top: -80%;
+    transform: rotate(55deg);
 }
